@@ -5,7 +5,7 @@ import pytesseract
 spacing = 50
 pytesseract.pytesseract.tesseract_cmd = r'C:\Program Files\Tesseract-OCR\tesseract.exe'
 
-im1 = Image.open('example5.png')
+im1 = Image.open('examples\example5.png')
 w,h = im1.size
 letters = pytesseract.image_to_boxes(im1).split("\n")
 available_letters = []
